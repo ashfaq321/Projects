@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CoffeeApp</string>
+    <string-array name="spinner_ages_entries">
+        <item>Cappicino</item>
+        <item>Esspresso</item>
+        <item>White Coffee</item>
+        <item>CoffeeBrave</item>
+        <item>Coffee Mocha</item>
+    </string-array>
+</resources>

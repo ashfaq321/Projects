@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ParsingInAndroid</string>
+    <string-array name="spinner_entries_array">
+        <item>"10"</item>
+        <item>\"12\"</item>
+        <item>Fouteen</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+
+</resources>

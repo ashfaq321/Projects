@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">WrapperAndParsing</string>
+    <string-array name="spinner_ages_day_entries">
+        <item>Day</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string-array name="spinner_ages_month_entries">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="spinner_ages_year_entries">
+        <item>Year</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+    </string-array>
+</resources>

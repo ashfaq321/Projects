@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 convertedNum++;
                 String ans = String.valueOf(convertedNum);
                 txtVuNum.setText(ans);
-                btnSubCoffee.startAnimation(alphaAnim);
             }
         });
         btnSubCoffee.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                     String ans = String.valueOf(convertedNum);
                     txtVuNum.setText(ans);
                 }
+                btnAddCoffee.startAnimation(alphaAnim);
 
             }
         });

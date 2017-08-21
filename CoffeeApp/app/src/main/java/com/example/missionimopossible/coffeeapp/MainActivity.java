@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
                     String ans = String.valueOf(convertedNum);
                     txtVuNum.setText(ans);
                 }
-                btnAddCoffee.startAnimation(alphaAnim);
 
             }
         });

@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 convertedNum++;
                 String ans = String.valueOf(convertedNum);
                 txtVuNum.setText(ans);
+                btnSubCoffee.startAnimation(alphaAnim);
             }
         });
         btnSubCoffee.setOnClickListener(new View.OnClickListener() {

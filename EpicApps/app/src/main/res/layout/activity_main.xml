@@ -2,11 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="1"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:background="#6200EA">
     <TextView
+        android:id="@+id/login_txt_vu"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:gravity="center"
@@ -37,7 +39,9 @@
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+            <!--One Way to show passowed.put this tag inside the TextInputLayput-->
 
             <EditText
                 android:id="@+id/password_edittext"
@@ -47,6 +51,12 @@
                 android:inputType="textPassword"
                 android:text="#FFF"/>
         </android.support.design.widget.TextInputLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Show Password"
+            android:id="@+id/chck_box_id"/>
 
         <Button
             android:layout_width="match_parent"

@@ -2,11 +2,22 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Setting"
-        android:icon="@mipmap/ic_launcher"
-        app:showAsAction="ifRoom"
+
+    <item android:id="@+id/opt_menu_refresh"
+        android:title="Refresh"
+        android:icon="@android:drawable/ic_menu_rotate"
+        app:showAsAction="always"/>
+    <item android:title="Search"
+        android:icon="@android:drawable/ic_search_category_default"
+        app:showAsAction="always"
+        android:id="@+id/opt_menu_search"
         />
-    <item android:title="Copyright" />
-    <item android:title="Privacy" />
-    <item android:title="Company" />
+    <item android:title="Select"
+        android:id="@+id/opt_menu_select" />
+    <item android:title="Edit"
+        android:id="@+id/opt_menu_edit"/>
+    <item android:title="Delete"
+        android:id="@+id/opt_menu_delete"/>
+    <item android:title="Info"
+        android:id="@+id/opt_menu_info"/>
 </menu>

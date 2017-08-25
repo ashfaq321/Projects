@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     Button btnSubCoffee;
     Spinner spinnerAges;
     Animation alphaAnim;
+    Animation rotateAnim;
+    Button btnOrder;
+    Animation scaleAnim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +26,11 @@ public class MainActivity extends AppCompatActivity {
         spinnerAges=(Spinner)findViewById(R.id.spinner_ages);
         btnAddCoffee = (Button) findViewById(R.id.btn_add_coffee);
         btnSubCoffee = (Button) findViewById(R.id.btn_sub_coffee);
+        btnOrder= (Button)findViewById(R.id.btn_order);
         txtVuNum = (TextView) findViewById(R.id.txt_vu_num);
         alphaAnim= AnimationUtils.loadAnimation(MainActivity.this,R.anim.alpha_anim);
+        rotateAnim=AnimationUtils.loadAnimation(MainActivity.this,R.anim.rotate_alpha);
+        scaleAnim=AnimationUtils.loadAnimation(MainActivity.this,R.anim.scale_anim);
         btnAddCoffee.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -52,5 +58,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        btnOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+/*
+                 btnOrder.startAnimation(rotateAnim);
+*/
+                btnOrder.startAnimation(scaleAnim);
+            }
+        });
+
     }
 }

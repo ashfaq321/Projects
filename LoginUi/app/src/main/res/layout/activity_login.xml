@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/image_gradiant"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hey,\nWelcome"
+        android:textColor="@color/BlackColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Information"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Roll no"
+                android:textSize="20sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Smester"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Class"
+                android:textSize="20sp"
+                android:textColor="#000"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <TextView
+                android:text="Aslam"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="12"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="5th"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="BSSE"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+            <TextView
+                android:text="Ali"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="10"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="7th"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="BSCS"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:text="Bilal"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="4"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="8th"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="BSIT"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_weight="1"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

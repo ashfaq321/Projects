@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jackreacher.loginui.Login_Activity"
+    android:background="@drawable/takahiro_sakamoto_181476"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:textColor="@color/WhiteColor"
+        android:textSize="27sp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:paddingBottom="30dp"
+        android:layout_weight="0.4"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="16dp"
+        android:layout_margin="30dp"
+        android:layout_weight="0.1"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Usernane"
+                android:textColor="@color/BlackColor"
+                android:padding="20dp"
+                android:drawableLeft="@drawable/account_circle_grey_36x36"
+                android:drawablePadding="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColor="@color/BlackColor"
+                android:drawableLeft="@drawable/lock_outline_grey_36x36"
+                android:drawablePadding="10dp"
+                android:padding="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fogot password ?"
+                android:paddingTop="8dp"
+                android:paddingBottom="15dp"
+                android:layout_gravity="end"/>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in"
+                    android:textColor="@color/WhiteColor"
+                    android:gravity="center"
+                    android:background="@color/ButtonBackground"
+                    />
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

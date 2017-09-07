@@ -2,17 +2,23 @@ package com.example.jackreacher.listview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    EditText editTextPassword;
+    CheckBox chkBoxBtn;
     ListView citiesBeautifulWorld;
     ArrayAdapter citiesBeautifulWorldArrayAdapter;
     String[] citiesWorld = {"Islamabad", "Melbourn", "Sydney", "Alice Springs", "London", "Rome", "Florence", "Paris", "Vience", "Amsterdam"
@@ -22,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        chkBoxBtn=(CheckBox)findViewById(R.id.chk_box_btn);
+        editTextPassword=(EditText)findViewById(R.id.edit_text_password);
         citiesBeautifulWorld = (ListView) findViewById(R.id.cities_beautiful_world);
         citiesBeautifulWorldArrayAdapter = new ArrayAdapter(MainActivity.this, R.layout.dummy_row_style, citiesWorld);
         citiesBeautifulWorld.setAdapter(citiesBeautifulWorldArrayAdapter);
@@ -35,6 +43,19 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, citiesName, Toast.LENGTH_SHORT).show();
 
 
+            }
+        });
+        chkBoxBtn.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                {
+                    editTextPassword.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                }
+                else
+                {
+                    editTextPassword.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                }
             }
         });
 

@@ -46,7 +46,7 @@
             android:id="@+id/spinner_ages_year"
             android:entries="@array/spinner_ages_year_entries"
             android:layout_weight="0.2">
-        </Spinner>
+        </Spinner>v
     </LinearLayout>
 <Button
     android:layout_width="wrap_content"

@@ -61,10 +61,8 @@ public class MainActivity extends AppCompatActivity {
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-/*
-                 btnOrder.startAnimation(rotateAnim);
-*/
-                btnOrder.startAnimation(scaleAnim);
+                 btnOrder.startAnimation(scaleAnim);
+               /*btnOrder.startAnimation(rotateAnim);*/
             }
         });
 
